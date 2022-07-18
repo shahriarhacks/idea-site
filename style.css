@@ -108,6 +108,10 @@ hr {
 .section-container {
     width: 870px;
     height: 362px;
+    background-color: #ffffff;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 
 .courses {
@@ -155,8 +159,35 @@ hr {
 }
 
 @media only screen and (max-width:680px) {
-    .players {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr)
+    body {
+        background-color: #FFFFFF;
+        margin: auto;
     }
+
+    .container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        align-items: center;
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
 }
