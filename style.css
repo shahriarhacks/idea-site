@@ -12,7 +12,8 @@ body {
 
 main {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container {
@@ -20,6 +21,8 @@ main {
     width: 866px;
     height: 671px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
     /* margin: 0 auto; */
 }
 
@@ -99,4 +102,61 @@ hr {
 .blog-author a {
     text-decoration: none;
     color: #562EFF;
+}
+
+/* Statr Top Courses */
+.section-container {
+    width: 870px;
+    height: 362px;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course {
+    width: 252.42px;
+    height: 269.79px;
+    border-radius: 10px;
+    box-shadow: 1px 5.34229px 13.3557px #ffffff;
+}
+
+.course .course-banner img {
+    width: 266px;
+    height: 141px;
+}
+
+.course-title {
+    font-size: 20px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-solid {
+    color: #FFC014;
+    width: 12.39px;
+    height: 11.81px;
+    font-size: 12px;
+}
+
+.course-duration {
+    color: #FF4A60;
+    font-weight: 600;
+    font-size: 14.6913px;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 5px 10px;
+}
+
+@media only screen and (max-width:680px) {
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr)
+    }
 }
